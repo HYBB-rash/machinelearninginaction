@@ -34,7 +34,7 @@ def createDataSet():
 # ? @Time: 2021/04/28 15:25:43
 # * @Desc: 查看生成的数据集
 myDat, labels = createDataSet()
-print(myDat)
+myDat
 
 # %%
 
@@ -65,15 +65,15 @@ def calcShannonEnt(dataSet):
 
 # ? @Time: 2021/04/28 15:26:29
 # * @Desc: 可以看到当前数据集的香农熵
-print(calcShannonEnt(myDat))
+calcShannonEnt(myDat)
 
 # %%
 
 # ? @Time: 2021/04/28 15:25:27
 # * @Desc: 香农熵越高，代表混合数据越多。尝试添加一个类数据，观察香农熵的变化
 myDat[0][-1] = 'maybe'
-print(myDat)
-print(calcShannonEnt(myDat))
+myDat
+calcShannonEnt(myDat)
 
 # %%
 
